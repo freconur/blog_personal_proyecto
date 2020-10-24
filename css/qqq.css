@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto+Slab:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap');
+body{
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding: 0;
+    /* position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; */
+
+}
+header{
+    width: 100%;
+    height: 140px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+/* AQUI COMIENZA EL NAV SECUNDARIOS */
+header .nav-secundario{
+    background: #48cfad;
+    width: 100%;
+    height: 60px;
+    display: grid;
+}
+header .nav-secundario .icons{
+    width: 300px;
+    height: auto;
+    display: flex;
+    justify-items: flex-end;
+    align-items: center;
+    justify-content: space-between;
+    justify-self: end;
+    margin-right: 50px;
+}
+a{
+    display: inline;
+    text-decoration: none;
+    color: black;
+}
+header .icons span{
+    color: white;
+    
+    
+}
+/* AQUI COMIENZA EL NAV PRINCIPAL */
+header nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 80px;
+    justify-content: space-between;
+}
+nav .logo{
+    margin-left: 50px;
+}
+nav .sobre-mi{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 50px;
+
+}
+nav .logo img{
+    width: 200px;
+    margin-top: 10px;
+}
+nav .sobre-mi a{
+    font-weight: bold;
+    border-bottom: 1px solid black;
+    color: black;
+}
+/* COMIENZA PAGINA BLOGS */
+
+.blog-main {
+    display: grid;
+    grid-template-columns: 150px minmax(100px, 500px) minmax(100px, 566px) 150px;
+    height: 350px;
+    padding: 0px 0px 40px 0px;    
+    background-color: #e6e9ed;
+}
+.blog-main .imagen-portada {
+    display: grid;
+    grid-column: 2;
+    align-content: center;
+    
+}
+.imagen-portada p{
+    font-size: 20px;
+    font-weight: bold;
+}
+.imagen-portada img{
+    width: 100%;
+}
+.blog-main .descripcion-portada{
+    display: grid;
+    grid-column: 3;    
+    align-content: center;
+    margin-left: 40px;
+    
+    
+}
+.descripcion-portada a h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+.descripcion-portada-boton {
+    border: 1px solid #48cfad;    
+    width: 120px;
+    height: 40px;
+    overflow: hidden;
+    position: relative;
+    /* vertical-align: top; */
+    
+}
+.descripcion-portada-boton a, p{
+    font-family: 'Roboto Mono', monospace;
+}
+.descripcion-portada .boton-overlay{
+    display: none;
+    cursor: pointer;
+    background:#48cfad;
+    position: absolute;
+    color: white;
+    /* font-weight: bold; */
+    top: -4px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: center;   
+}
+.descripcion-portada-boton:hover .boton-overlay{
+    display: grid;    
+}
+/* AQUI COMIENZA ULTIMOS BLOGS */
+.main-ultimos-blogs{
+    display: grid;
+    justify-items: center;
+    padding: 50px 150px;
+    /* margin-top: 50px; */
+
+}
+.main-ultimos-blogs-title{
+    font-weight: bold;
+    font-size: 20px;    
+}
+.blog-container{
+    margin-top: 50px;
+    width: 100%;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr) ;
+    /* padding-left: 150px;
+    padding-right: 150px; */
+}
+.blog-container .ultimos-blogs{
+    display: grid;    
+}
+.blog-container .ultimos-blogs img{
+    width: 100%;
+}
+.ultimos-blogs .boton-overlay{
+    display: none;
+    cursor: pointer;
+    background:#48cfad;
+    position: absolute;
+    color: white;
+    /* font-weight: bold; */
+    top: -4px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: center;   
+}
+/* AQUI EMPIEZA EL FOOTER */
+.footer{
+    display: grid;
+    grid-template-rows: 30px 90px;
+    align-items: center;
+    height: 120px;
+    background-color: #48cfad;
+    margin: 0;
+}
+.footer div{
+    height: 90px;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    display: grid;
+    grid-row: 2;
+    background-color: rgb(29, 28, 28);
+}
+.footer div p{
+    color: white;
+
+}

@@ -1,0 +1,71 @@
+@media (max-width: 768px){
+    .home-main-text{
+        font-size: 40px;
+    }
+    .home-main section{
+        margin-top: 50px;
+    }
+    .main-ultimos-blogs{
+        grid-template-columns: 1fr 1fr;
+    }
+    .blog-main{
+        padding: 20px 40px;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .blog-main .descripcion-portada{
+        padding-left: 0;
+    }
+    .blogspost-main-container{
+        padding: 10px 10%;
+    }
+    .blogspost-img-container{
+        height: auto;
+    }
+    .blogspost-img-container img{
+        position: initial;
+    }
+    /* .contact-main-container div{
+        width: 50%;
+    } */
+    .contact-main-container{
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .contact-main-container .contact{
+        margin-bottom: 20px;
+        padding: initial;
+    }
+    /* PAGINA DE PROYECTOS */
+    .proyectos{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px){
+    .contact-main-container div{
+        /* display: inline-flex; */
+    }    
+    .home-main-text{
+        font-size: 30px;
+    }
+    .nav-secundario{
+        justify-content: center;
+        padding-right: inherit;
+    }
+    nav .sobre-mi{
+        padding-right: 20px;
+    }
+    .main-ultimos-blogs{
+        grid-template-columns: 1fr;
+    }
+    /* PAGINA DE PROYECTOS */
+    .main-miperfil {
+        grid-template-columns: 1fr;
+    }
+    .proyectos{
+        grid-template-columns: 1fr;
+    }
+}
