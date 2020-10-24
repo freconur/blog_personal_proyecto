@@ -8,6 +8,9 @@
     .main-ultimos-blogs{
         grid-template-columns: 1fr 1fr;
     }
+    .main-miperfil {
+        grid-template-columns: 1fr;
+    }
     .blog-main{
         padding: 20px 40px;
         flex-wrap: wrap;
