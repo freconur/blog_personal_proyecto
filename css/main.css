@@ -79,6 +79,7 @@ nav .sobre-mi a{
     color: white;
     font-size: 50px; 
     letter-spacing: 10px;   
+    font-family: 'Roboto Mono', monospace;
 }
 .home-main-button{
     width: 150px;
